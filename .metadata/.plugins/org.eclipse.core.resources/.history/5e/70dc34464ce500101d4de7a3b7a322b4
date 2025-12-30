@@ -1,0 +1,29 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class ifEx04 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("키를 입력하세요 : ");
+		int height = scan.nextInt();
+		if(height >= 120) {
+			System.out.println("놀이기구 이용가능합니다.");
+		} else if (height < 120 && height >0) {
+			System.out.print("부모님과 함께 오셨나요? (yes:1, no:0)");
+			int yesNo = scan.nextInt();
+			if(yesNo == 1) {
+				System.out.println("놀이기구 이용가능합니다.");
+			} else if (yesNo == 0) {
+				System.out.println("놀이기구를 이용할 수 없습니다.");
+			} else {
+				System.out.println("1, 0 중에서 입력하세요.");
+			}
+		} else {
+			System.out.println("놀이기구를 이용할 수 없습니다.");
+		}
+
+	}
+
+}

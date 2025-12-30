@@ -1,0 +1,28 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class Scannertest {
+
+	public static void main(String[] args) {
+		// Scanner는 값을 키보드로부터 입력받을 수 있는 클래스이다.
+		// 단, 클래스이므로 반드시 new Scanner()형식으로 생성해야 한다.
+		// scan은 새롭게 생성된 클래스 이름
+		Scanner scan = new Scanner(System.in); // 인스턴스한다.
+		// 클래스 사용하는 근본적인 목적은 메서드의 재사용을 위함이다.
+//		Scanner scan2 = new Scanner(System.in); 가 아닌
+		
+		
+		int age = 0;
+		System.out.println("나이를 입력하세요 : ");
+		age = scan.nextInt();
+//		System.out.printf("나이 : %d\n", age);
+		
+		System.out.println("이름 입력하세요 : ");
+		String name = scan.next(); // 메서드 재사용
+//		System.out.printf("이름 : %s\n", name);
+		
+		System.out.printf("%s의 나이는 %d살입니다.\n", name, age);
+	}
+
+}

@@ -1,0 +1,15 @@
+package ifexample;
+
+public class Printf {
+
+	public static void main(String[] args) {
+		
+		int value = 123;
+		System.out.printf("상품의 가격: %d\n", value);
+		// 6자리이면서 우측부터 채우기
+		System.out.printf("상품의 가격: %6d\n", value);
+		System.out.printf("상품의 가격: %06d\n", value);
+		System.out.print("000");
+	}
+
+}

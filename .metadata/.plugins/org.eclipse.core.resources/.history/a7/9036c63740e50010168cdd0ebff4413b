@@ -1,0 +1,14 @@
+package ifexample;
+
+import java.util.Random;
+
+public class Randomtest {
+
+	public static void main(String[] args) {
+		Random rm = new Random();
+		int num = rm.nextInt(10); // 0~9(10개)에서 1~10 으로 값 1증가시킴
+		System.out.println(num);
+
+	}
+
+}

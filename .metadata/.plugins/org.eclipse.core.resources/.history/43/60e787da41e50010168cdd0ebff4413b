@@ -1,0 +1,16 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class ifEx01 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("ID 입력 : ");
+		String ID = scan.next();
+		System.out.println(ID);
+
+	}
+
+}

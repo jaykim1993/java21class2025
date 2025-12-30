@@ -1,0 +1,15 @@
+package ifexample;
+
+import java.util.Random;
+
+public class Randomtest {
+
+	public static void main(String[] args) {
+		Random rm = new Random();
+		// 1~10까지 난수 발생시키기
+		int num = rm.nextInt(10)+1; // 0~9(10개)에서 1~10 으로 값 1증가시킴
+		System.out.println("난수 : "+num);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class ifEx01 {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource") // 예외처리
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("ID 입력 : ");
+		int  ID = scan.nextInt();
+		System.out.print("PW 입력 : ");
+		int PW = scan.nextInt();
+		int dbId = 1234;
+		int dbPw = 1111;
+		if(ID == dbId) {
+			if(PW == dbPw) {
+				System.out.println("로그인 성공");
+			} else {
+				System.out.println("로그인 실패(비밀번호 불일치)");
+			}
+		} else {
+			System.out.println("로그인 실패(아이디 불일치)");
+		}
+	}
+}

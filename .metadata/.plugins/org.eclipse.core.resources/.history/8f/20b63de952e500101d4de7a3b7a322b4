@@ -1,0 +1,38 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class ifEx05 {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.print("금액을 입력하세요 >> ");
+		int price = scan.nextInt();
+		
+		int oman = price/50000;
+		int omanNa = price%50000;
+		System.out.printf("오만원권 : %d매 \n" , oman );
+		
+		int man = omanNa/10000;
+		int manNa = omanNa%10000;
+		System.out.printf("만원권 : %d매 \n",  man);
+		
+		int ochun =manNa/5000;
+		int ochunNa = manNa%5000;
+		System.out.printf("오천원권 : %d매\n",  ochun);
+		
+		int chun = ochunNa/1000;
+		int chunNa = ochunNa%1000;
+		System.out.printf("천원권 : %d매 \n" , chun);
+		
+		int oback = chunNa /500;
+		int obackNa = chunNa %500;
+		System.out.printf("오백원 : %d매 \n",  oback);
+		
+		int back = obackNa/100;
+		System.out.printf( "백원 : %d매 \n" , back);
+		
+	}
+
+}
