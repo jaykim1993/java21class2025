@@ -3,9 +3,18 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="true"/>
 		<list key="replacehistory">
+			<item value="change"/>
+			<item value="drinkPrice"/>
+			<item value="bur2Price"/>
+			<item value="bur1Price"/>
 			<item value="Remainder"/>
 		</list>
 		<list key="findhistory">
+			<item value="payBack"/>
+			<item value="drink"/>
+			<item value="burger2"/>
+			<item value="burger1"/>
+			<item value="ger"/>
 			<item value="Na"/>
 		</list>
 	</section>

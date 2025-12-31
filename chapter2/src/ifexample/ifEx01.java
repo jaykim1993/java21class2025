@@ -2,7 +2,7 @@ package ifexample;
 
 import java.util.Scanner;
 
-public class ifEx01 {
+public class IfEx01 {
 
 	public static void main(String[] args) {
 		String dbId = "1234";
