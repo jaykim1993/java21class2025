@@ -10,6 +10,7 @@
 			<item value="Remainder"/>
 		</list>
 		<list key="findhistory">
+			<item value="most"/>
 			<item value="payBack"/>
 			<item value="drink"/>
 			<item value="burger2"/>

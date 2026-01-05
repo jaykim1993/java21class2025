@@ -18,9 +18,7 @@ public class Arrtest10 {
 		// 예매 가능 판별
 			boolean memberchk = false;
 			boolean seatchk = false;
-		// 1. 빈 자리 출력(빈칸)
-		// 2. 메뉴 선택
-		// 3. 종료 까지 와일문
+
 		
 		// 프로그램 조건문
 			while(run) {
