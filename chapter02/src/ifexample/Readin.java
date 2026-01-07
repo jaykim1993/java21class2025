@@ -1,0 +1,20 @@
+package ifexample;
+
+import java.io.IOException;
+
+public class Readin {
+
+	public static void main(String[] args) throws IOException {
+		// System.in.read() => 키보드로부터 값을 입력받을 수 있다.
+		//  키코드를 하나씩 읽기 때문에 2개 이상의 키가 조합된 한글을 읽을 수 없다.
+		// 숫자든 문자든 한 음절씩 아스키 코드값이 출력된다.
+		// -> 데이터 타입 골라야하고 원하는대로 입력이 안되기에 사용하지 않는다.
+		int keycode;
+		
+		System.out.print("값을 입력하세요 : ");
+		keycode = System.in.read();
+		System.out.println( "keycode는 " +keycode);
+		
+	}
+
+}

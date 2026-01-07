@@ -1,0 +1,54 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class ifEx11 {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		int porkBurger = 8700;
+		int shrimpBurger = 6200;
+		int coke = 1500;
+		
+		System.out.println("===롯데리아===");
+		System.out.printf("1. 불고기 버거 : %d원%n2.새우 버거 : %d원%n3. 콜라 : %d원%n", porkBurger, shrimpBurger, coke);
+		System.out.println("===메뉴선택===");
+		System.out.print("메뉴를 입력하세요 : ");
+		int menuSelection = scan.nextInt();
+		System.out.print("현금을 입력하세요 : ");
+		int payMoney = scan.nextInt();
+		int remained = 0;
+		
+		if(menuSelection == 1) {remained= payMoney - porkBurger;};
+		if(menuSelection == 2) {remained = payMoney - shrimpBurger;};
+		if(menuSelection == 3) {remained = payMoney - coke;};
+		
+		if(remained >= 0) {
+			System.out.printf("잔돈 : %d원", remained);
+		} else {
+			System.out.println("현금이 부족합니다.");
+		}
+		
+		
+//		switch (menuSelection) {
+//		case 1 : if(payMoney >= porkBurger) {
+//			System.out.println("잔돈 : " + (payMoney-porkBurger) + "원");
+//		} else {
+//			System.out.println("현금이 부족합니다.");
+//		}; break;
+//		case 2 : if(payMoney >= shrimpBurger) {
+//			System.out.println("잔돈 : " + (payMoney-shrimpBurger) + "원");
+//		}else {
+//			System.out.println("현금이 부족합니다.");
+//		}; break;
+//		case 3 : if(payMoney >= coke) {
+//			System.out.println("잔돈 : " + (payMoney-coke) + "원");
+//		}else {
+//			System.out.println("현금이 부족합니다.");
+//		}; break;
+//		default :System.out.println("메뉴 1~3중에 골라주세요."); break;
+//		}
+	}
+	
+}
