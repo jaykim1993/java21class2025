@@ -3,6 +3,8 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="true"/>
 		<list key="replacehistory">
+			<item value="i"/>
+			<item value="j"/>
 			<item value="change"/>
 			<item value="drinkPrice"/>
 			<item value="bur2Price"/>
@@ -10,6 +12,9 @@
 			<item value="Remainder"/>
 		</list>
 		<list key="findhistory">
+			<item value="userlog"/>
+			<item value="y"/>
+			<item value="x"/>
 			<item value="most"/>
 			<item value="payBack"/>
 			<item value="drink"/>
