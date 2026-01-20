@@ -20,7 +20,7 @@ public class MapTest01 {
 			// Map 인터페이스의 모든 메소드를 접근할 수 있다.
 		// K는 반드시 래퍼클래스(사용자 정의 클래스, String, Integer, Double..)
 		Map<String, String> list = new HashMap<String, String>();
-		HashMap<String, String> list02 = new HashMap<String, String>();
+
 		
 		String[] key = {"a", "b", "c", "d", "e"};
 		String[] value = {"apple", "banana", "candy", "dog", "enum"};

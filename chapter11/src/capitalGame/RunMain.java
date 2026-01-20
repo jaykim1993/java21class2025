@@ -7,7 +7,6 @@ public class RunMain {
 	public static void main(String[] args) {
 		HashMap<String, String> capitalMap = new HashMap<String, String>();
 		Scanner scan = new Scanner(System.in);
-		Scanner scan2 = new Scanner(System.in);
 		Game rusia = new Game("모스크바");
 		Game korea = new Game("서울");
 		Game australia = new Game("캔버라");
@@ -25,17 +24,6 @@ public class RunMain {
 		capitalMap.put("필리핀", philipnenes.getCapital());
 		capitalMap.put("일본", japan.getCapital());
 		
-//		for(String key : capitalMap.keySet()) {
-//			System.out.println(capitalMap.get(key));
-//		}
-//		파리
-//		베를린
-//		워싱턴 DC
-//		도쿄
-//		서울
-//		모스크바
-//		캔버라
-//		마닐라
 		
 		System.out.println("수도 맞추기 게임을 시작합니다. **");
 		while(true) {
@@ -45,7 +33,8 @@ public class RunMain {
 			    while(true) {
 			        System.out.printf("현재 %d개의 나라의 수도가 입력되어 있습니다.%n", capitalMap.size());
 			        System.out.printf("나라와 수도 입력 [%d] >> ", capitalMap.size()+1);
-			        String input = scan2.nextLine();
+			        scan.nextLine(); // ← 버퍼에 남은 엔터 제거
+			        String input = scan.nextLine();
 			        if(input.equals("그만")) break;
 			        StringTokenizer st = new StringTokenizer(input, " ");
 			        String country = st.nextToken();
@@ -81,11 +70,8 @@ public class RunMain {
 			else System.out.println("잘못된 입력입니다.");
 		}
 		
-		
 
 	}
 	
-	public void addCountry() {
-		
-	}
+
 }
